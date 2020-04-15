@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetectedObject.cs" />
+    <Compile Include="Difficult.cs" />
     <Compile Include="LacmusImage.cs" />
     <Compile Include="PascalVocBoundingBox.cs" />
     <Compile Include="ImageAnnotation.cs" />
