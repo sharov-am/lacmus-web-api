@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lacmus.WebApp.Web.Core", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lacmus.WebApp.EntityFrameworkCore", "src\lacmus.WebApp.EntityFrameworkCore\lacmus.WebApp.EntityFrameworkCore.csproj", "{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lacmus.WebApp.Model", "src\lacmos.WebApp.Model\lacmus.WebApp.Model.csproj", "{E4F7D996-60B1-4557-8B5B-59E6A864CCE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lacmus.WebApp.Model", "src\lacmus.WebApp.Model\lacmus.WebApp.Model.csproj", "{E4F7D996-60B1-4557-8B5B-59E6A864CCE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LacmusImage.cs" />
     <Compile Include="PascalVocBoundingBox.cs" />
-    <Compile Include="Image.cs" />
+    <Compile Include="ImageAnnotation.cs" />
     <Compile Include="ImageSize.cs" />
     <Compile Include="ImageSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
