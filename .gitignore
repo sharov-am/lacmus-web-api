@@ -445,3 +445,7 @@ ASALocalRun/
 
 # Fody files
 *.xsd
+/lacmus_WebApp/lacmus.WebApp/lacmus.WebApp.zip
+/lacmus_WebApp/lacmus.WebApp/5.4.0/_screenshots/ui-home.png
+/lacmus_WebApp/lacmus.WebApp/5.4.0/_screenshots/ui-login.png
+/lacmus_WebApp/lacmus.WebApp/5.4.0/_screenshots/ui-user-create-modal.png

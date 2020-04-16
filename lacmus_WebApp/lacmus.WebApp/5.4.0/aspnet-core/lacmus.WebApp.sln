@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lacmus.WebApp.Web.Core", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lacmus.WebApp.EntityFrameworkCore", "src\lacmus.WebApp.EntityFrameworkCore\lacmus.WebApp.EntityFrameworkCore.csproj", "{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lacmus.WebApp.Model", "..\lacmus.WebApp.Model\lacmus.WebApp.Model.csproj", "{D14DCCC2-7A26-4C44-811C-283A491A61D2}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lacmus.WebApp.Model", "src\lacmus.WebApp.Model\lacmus.WebApp.Model.csproj", "{656D5286-E34E-49EA-B6B9-88C2EB9FD3EA}"
 EndProject
 Global
@@ -59,10 +57,6 @@ Global
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D14DCCC2-7A26-4C44-811C-283A491A61D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D14DCCC2-7A26-4C44-811C-283A491A61D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D14DCCC2-7A26-4C44-811C-283A491A61D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D14DCCC2-7A26-4C44-811C-283A491A61D2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{656D5286-E34E-49EA-B6B9-88C2EB9FD3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{656D5286-E34E-49EA-B6B9-88C2EB9FD3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{656D5286-E34E-49EA-B6B9-88C2EB9FD3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
