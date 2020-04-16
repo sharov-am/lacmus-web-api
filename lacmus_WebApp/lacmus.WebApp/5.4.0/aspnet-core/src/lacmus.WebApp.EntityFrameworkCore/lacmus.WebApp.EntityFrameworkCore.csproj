@@ -27,5 +27,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lacmus.WebApp.Core\lacmus.WebApp.Core.csproj" />
+    <ProjectReference Include="..\lacmus.WebApp.Model\lacmus.WebApp.Model.csproj" />
   </ItemGroup>
 </Project>

@@ -11,10 +11,14 @@ namespace lacmus.WebApp.Model
 
         public bool Truncated { get; set; }
 
-        public Difficult Difficult { get; set; }
-
+        public bool IsDifficult { get; set; }
 
         public PascalVocBoundingBox BoundingBox { get; set; }
+
+        public ImageAnnotation ImageAnnotation { get; set; }
+
+        public long ImageAnnotationId { get; set; }
+
 
 
     }

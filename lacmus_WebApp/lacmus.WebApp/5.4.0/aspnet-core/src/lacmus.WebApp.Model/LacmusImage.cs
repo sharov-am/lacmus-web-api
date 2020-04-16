@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Entities.Auditing;
+﻿using System.Collections.Generic;
+using Abp.Domain.Entities.Auditing;
 
 namespace lacmus.WebApp.Model
 {
@@ -6,9 +7,14 @@ namespace lacmus.WebApp.Model
     {
         public string FileName { get; set; }
 
-        private string Hash { get; set; }
+        public string Hash { get; set; }
 
-        private ImageAnnotation Annotation { get; set; }
+        public ImageAnnotation ImageAnnotation { get; set; }
 
+        public override long? CreatorUserId { get; set; }
+
+        public LacmusProject LacmusProject { get; set; }
+
+        public long LacmusProjectId { get; set; }
     }
 }
