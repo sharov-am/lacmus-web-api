@@ -14,7 +14,7 @@ namespace lacmus.WebApp.EntityFrameworkCore
 
         public DbSet<ImageAnnotation> ImageAnnotations { get; set; }
 
-        public DbSet<LacmusProject> LacmusProjects { get; set; }
+        public DbSet<SurveySession> LacmusProjects { get; set; }
        
         public DbSet<ImageSource> ImageSources { get; set; }
 
@@ -39,9 +39,16 @@ namespace lacmus.WebApp.EntityFrameworkCore
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<LacmusImage>()
-                .HasOne<LacmusProject>(img => img.LacmusProject)
+                .HasOne<SurveySession>(img => img.SurveySession)
                 .WithMany(prj => prj.LacmusImages)
-                .HasForeignKey(img => img.LacmusProjectId);
+                .HasForeignKey(img => img.SurveySessionId);
+
+
+            modelBuilder.Entity<LacmusImage>()
+                .HasOne<Device>(t=>t.Device).
+                .WithMany(t1=>t1.LacmusImages)
+                
+                
 
             modelBuilder.Entity<LacmusImage>()
                 .HasOne<ImageAnnotation>(ann => ann.ImageAnnotation)
@@ -72,8 +79,8 @@ namespace lacmus.WebApp.EntityFrameworkCore
                 .WithOne(bb => bb.DetectedObject)
                 .HasForeignKey<PascalVocBoundingBox>(bb => bb.DetectedObjectId);
 
-            
-            
+
+           
 
         }
     }

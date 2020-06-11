@@ -30,7 +30,7 @@ namespace lacmus.WebApp
             {
                 throw new Exception("There is no current user!");
             }
-
+            
             return user;
         }
 

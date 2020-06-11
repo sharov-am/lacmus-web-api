@@ -1657,7 +1657,7 @@ namespace lacmus.WebApp.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
-                    b.Property<long>("LacmusProjectId")
+                    b.Property<long>("SurveySessionId")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime?>("LastModificationTime")
@@ -1668,12 +1668,12 @@ namespace lacmus.WebApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LacmusProjectId");
+                    b.HasIndex("SurveySessionId");
 
                     b.ToTable("LacmusImages");
                 });
 
-            modelBuilder.Entity("lacmus.WebApp.Model.LacmusProject", b =>
+            modelBuilder.Entity("lacmus.WebApp.Model.SurveySession", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -2049,9 +2049,9 @@ namespace lacmus.WebApp.Migrations
 
             modelBuilder.Entity("lacmus.WebApp.Model.LacmusImage", b =>
                 {
-                    b.HasOne("lacmus.WebApp.Model.LacmusProject", "LacmusProject")
+                    b.HasOne("lacmus.WebApp.Model.SurveySession", "SurveySession")
                         .WithMany("LacmusImages")
-                        .HasForeignKey("LacmusProjectId")
+                        .HasForeignKey("SurveySessionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities.Auditing;
 
 namespace lacmus.WebApp.Model
@@ -12,9 +13,11 @@ namespace lacmus.WebApp.Model
         public ImageAnnotation ImageAnnotation { get; set; }
 
         public override long? CreatorUserId { get; set; }
+        
+        [ForeignKey(nameof(SurveySessionId))]
+        public SurveySession SurveySession { get; set; }
+        public int SurveySessionId { get; set; }
 
-        public LacmusProject LacmusProject { get; set; }
-
-        public long LacmusProjectId { get; set; }
+        public Device Device { get; set; }
     }
 }

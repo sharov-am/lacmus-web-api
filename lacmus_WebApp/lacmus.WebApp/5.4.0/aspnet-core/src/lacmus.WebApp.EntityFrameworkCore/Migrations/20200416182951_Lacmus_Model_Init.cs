@@ -1389,7 +1389,7 @@ namespace lacmus.WebApp.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_LacmusImages_LacmusProjectId",
                 table: "LacmusImages",
-                column: "LacmusProjectId");
+                column: "SurveySessionId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PascalVocBoundingBoxes_DetectedObjectId",
